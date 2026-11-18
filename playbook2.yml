@@ -1,0 +1,8 @@
+---
+- name: adding malik user
+  hosts: sikandar
+  gather_facts: no
+  vars:
+    user: malik
+  tasks:
+ 
