@@ -3,6 +3,13 @@
   hosts: nasir
   gather_facts: no
   vars:
-    user: kawshik
+    user: faizan
 
   tasks:
+    - name: creating a file with my name
+      file: 
+        path: "/tmp/{{ user }}_logs.txt"
+        owner: faizan
+        group: faizan
+        mode: "0644"
+        state: touch
