@@ -1,0 +1,8 @@
+---
+- name: creating file for nasir
+  hosts: nasir
+  gather_facts: no
+  vars:
+    user: kawshik
+
+  tasks:
